@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.10.2)
 
+set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
+set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-project(custom_memory_allocator)
+project(custom_memory_allocator VERSION ${PROJECT_VERSION})
 
 include_directories(src)
 include_directories(include)
